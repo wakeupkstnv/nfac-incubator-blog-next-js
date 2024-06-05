@@ -1,13 +1,12 @@
-import Header from '../components/Header';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
-
 import data from '../data/data.json';
+import Navbar from '../components/Navbar'
 
 export default function About() {
   return (
     <main>
-      <Header />
+      <Navbar />
       <div className="flex justify-center items-center mb-4 md:mb-5 py-28">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-12 p-5">
           <Card
