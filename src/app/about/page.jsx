@@ -1,21 +1,14 @@
-import React from 'react';
-import Header from './components/Header';
-import Card from './components/Card';
-import data from './data/data.json';
-import Footer from './components/Footer';
+import Header from '../components/Header';
+import Card from '../components/Card';
+import Footer from '../components/Footer';
 
-export default function Home() {
+import data from '../data/data.json';
+
+export default function About() {
   return (
     <main>
       <Header />
-      <div className='py-10 md:py-20 flex flex-col items-center justify-center px-4 py-[8rem] md:py-[10rem]'>
-        <div className='shadow-2xl w-full sm:w-3/4 max-w-4xl h-auto flex flex-col items-center justify-center p-5 md:p-10 bg-white rounded-lg'>
-          <h1 className='text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 font-mono text-center'>Начните головокружительную карьеру в ИТ</h1>
-          <h3 className='text-lg md:text-xl font-medium font-mono text-center'>Наши выпускники успешно работают в Apple, Google, Facebook</h3>
-          <img className='w-full md:w-auto h-auto py-5 rounded-xl md:py-16' style={{ borderRadius: '1rem' }} src='https://framerusercontent.com/images/Sb8xCdXQSLVFmXq8vt87LZTDQ.jpg' alt='Career in IT' />
-        </div>
-      </div>
-      <div className="flex justify-center items-center mb-4 md:mb-5">
+      <div className="flex justify-center items-center mb-4 md:mb-5 py-28">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-12 p-5">
           <Card
             author="Наши достижения"
@@ -32,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center mb-4 md:mb-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-12 p-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-12">
           <Card
             author="Отзывы наших студентов"
             title="Наши студенты отмечают высокое качество преподавания, дружелюбную атмосферу и практическую направленность курса."
@@ -43,7 +36,6 @@ export default function Home() {
           />
         </div>
       </div>
-
       <Footer />
     </main>
   );
